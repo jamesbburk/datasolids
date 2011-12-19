@@ -1,26 +1,15 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-echo "start";
-echo "1";
-//`/usr/local/bin/git pull`;
-echo "2";
-//`git pull`;
-echo "3";
-$output = shell_exec('/usr/local/bin/git pull');
-var_dump($output);
-echo "4";
-$output = exec('/usr/local/bin/git pull');
-var_dump($output);
-echo "5";
-$output = exec('git pull');
-var_dump($output);
-echo "6";
-$output = shell_exec('git pull');
-var_dump($output);
-echo "7";
-$output = shell_exec('ls');
-echo "<pre>$output</pre>";
+    $output = shell_exec('ls -l /usr/local/bin');
+    var_dump($output);
+    $output = shell_exec('/usr/local/bin/git status');
+    var_dump($output);
+    $output = shell_exec('/usr/local/bin/git pull');
+    var_dump($output);
+    $output = shell_exec('ls -l ../');
+    var_dump($output);
 
-//phpinfo();
+    $output = shell_exec('whoami');
+    var_dump($output);
+    $output = shell_exec('pwd');
+    var_dump($output);
 ?>
