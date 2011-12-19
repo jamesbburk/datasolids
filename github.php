@@ -1,1 +1,5 @@
-<?php shell_exec('git pull'); ?>
+<?php
+`git pull`;
+
+phpinfo();
+?>
