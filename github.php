@@ -1,9 +1,11 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 echo "start";
 echo "1";
-`/usr/local/bin/git pull`;
+//`/usr/local/bin/git pull`;
 echo "2";
-`git pull`;
+//`git pull`;
 echo "3";
 $output = shell_exec('/usr/local/bin/git pull');
 var_dump($output);
