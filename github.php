@@ -10,9 +10,15 @@ echo "3";
 $output = shell_exec('/usr/local/bin/git pull');
 var_dump($output);
 echo "4";
-$output = shell_exec('git pull');
+$output = exec('/usr/local/bin/git pull');
 var_dump($output);
 echo "5";
+$output = exec('git pull');
+var_dump($output);
+echo "6";
+$output = shell_exec('git pull');
+var_dump($output);
+echo "7";
 $output = shell_exec('ls');
 echo "<pre>$output</pre>";
 
